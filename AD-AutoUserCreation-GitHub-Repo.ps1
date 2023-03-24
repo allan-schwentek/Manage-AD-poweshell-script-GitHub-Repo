@@ -1,0 +1,2 @@
+﻿Import-Csv -Path C:\tmp\User.csv -Delimiter ";" |
+foreach {New-ADUser -name $_.fullname -GivenName $_.firstname -Surname $_.lastname -DisplayName $_.fullname -Path "OU=USER,DC=ALLANCBS3,DC=LOCAL" -CannotChangePassword $true -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true -SamAccountName $_.username -UserPrincipalName ($_.username +"@schwentek.local") -EmailAddress $_.email -AccountPassword (ConvertTo-SecureString $_.pwd -AsPlainText -Force

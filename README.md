@@ -1,3 +1,5 @@
+AD/365 management via PowerShell and scripts
+
 # AD-AutoUserCreation-GitHub-Repo
 Automatically create multiple users in AD, using powershell and CSV
 
@@ -11,6 +13,8 @@ The second PATH will be the OU path in AD where the user will be created.
 Modify the script according to your needs.
 
 #
+Gerenciamento de AD/365 via PowerShell e scripts
+
 Criação automatica de multiplos usuario no AD, usando powershell script, e importação de um arquivo CSV.
 
 Crie um arquivo CSV separado por ";" contendo as colunas: fullname ; firstname ; lastname ; username ; email ; pwd
